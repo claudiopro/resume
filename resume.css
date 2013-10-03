@@ -13,6 +13,9 @@ padding: 20px 10px;
 html, body {
 background-color: #fff;
 }
+button {
+display: none;
+}
 }
 a:link, a:visited {
 color: #444;
@@ -143,7 +146,30 @@ color: #444;
 background-color: #ddd;
 margin: 2px 0;
 }
+ul.projects {
+/*position: relative;*/
+}
+ul.projects li {
+/*float: left;*/
+}
+ul.projects li a {
+/*display: block;*/
+}
+ul.projects li a.repo:before {
+color: #999;
+padding-left: 2px;
+}
+ul.projects li a.sfnet:before {
+content: "(Sourceforge)";
+}
+ul.projects li a.github:before {
+content: "(Github)";
+}
+ul.projects li.last {
+clear: both;
+}
 ul.skills li:nth-child(even),
+ul.projects li:nth-child(even)
 ul.interests li:nth-child(even) {
 background-color: #eee;
 }
