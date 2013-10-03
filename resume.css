@@ -13,7 +13,14 @@ padding: 20px 10px;
 html, body {
 background-color: #fff;
 }
-
+}
+a:link, a:visited {
+color: #444;
+text-decoration: none;
+}
+a:hover, a:active {
+color: maroon;
+text-decoration: underline;
 }
 .main {
 width: 1000px;
@@ -57,10 +64,14 @@ font-size: 16px;
 text-transform: uppercase;
 margin: 0;
 }
-.company {
+.company, .college {
 color: maroon;
 font-size: 14px;
 font-weight: bold;
+}
+.company a:link, .company a:visited,
+.college a:link, .college a:visited {
+color: maroon;
 }
 .job {
 padding: 6px;
