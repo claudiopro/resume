@@ -105,7 +105,7 @@ float: right;
 white-space: nowrap;
 }
 
-dl.langs, ul.social, ul.interests, ul.skills {
+dl.langs, ul.social, ul.projects, ul.interests, ul.skills {
 margin: 0;
 padding: 0;
 position: relative;
@@ -132,6 +132,7 @@ dl.langs dd.last:after {
 content: ")";
 }
 	
+ul.projects li,
 ul.skills li,
 ul.interests li {
 border-radius: 4px;
@@ -193,6 +194,13 @@ border: 2px solid #eee;
 display: inline-block;
 padding: 20px;
 margin: 10px 0;
+position: relative;
+}
+div.pic button {
+position: absolute;
+bottom: 30px;
+right: 30px;
+z-index: 1;
 }
 div.pic img {
 width: 250px;
