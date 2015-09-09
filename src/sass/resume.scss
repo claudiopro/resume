@@ -9,14 +9,6 @@ font-family: "Geneva", "Helvetica Neue", Helvetica, Arial, sans-serif;
 background-color: #eee;
 padding: 20px 10px;
 }
-@media print {
-html, body {
-background-color: #fff;
-}
-button {
-display: none;
-}
-}
 a:link, a:visited {
 color: #444;
 text-decoration: none;
@@ -26,12 +18,12 @@ color: maroon;
 text-decoration: underline;
 }
 .main {
-width: 1000px;
+width: 1005px;
 background-color: #fff;
 }
 .col {
 float: left;
-width: 300px;
+width: 303px;
 min-height: 1024px;
 border-right: 2px solid #ccc;
 padding: 20px 15px;
@@ -97,10 +89,10 @@ border-top: 1px solid #ccc;
 margin-bottom: 20px;
 }
 .geo {
-background-image: url("geo.png");
+background-image: url("../../geo.png");
 }
 .edu {
-background-image: url("tocco.png");
+background-image: url("../../tocco.png");
 }
 
 .period {
@@ -163,7 +155,7 @@ ul.projects li a.sfnet:before {
 content: "(Sourceforge)";
 }
 ul.projects li a.github:before {
-background: url("github.png") transparent no-repeat 90% center;
+background: url("../../github.png") transparent no-repeat 90% center;
 content: "(Github\A0\A0\A0)";
 }
 ul.projects li.last {
@@ -188,13 +180,13 @@ border-bottom: none;
 }
 
 ul.social li.twitter {
-background-image: url("twitter.png");
+background-image: url("../../twitter.png");
 }
 ul.social li.email {
-background-image: url("email.png");
+background-image: url("../../email.png");
 }
 ul.social li.linkedin {
-background-image: url("linkedin.png");
+background-image: url("../../linkedin.png");
 }
 
 ul.social li:before {
@@ -231,4 +223,28 @@ z-index: 1;
 }
 div.pic img {
 width: 250px;
+}
+
+@media print {
+html, body {
+background-color: #fff;
+padding: 1px 0 0 0;
+}
+.col {
+padding: 0 15px;
+}
+button {
+display: none;
+}
+div.pic {
+margin: 0;
+}
+div.pic img.bio {
+}
+.col h2 {
+margin: 7px 0;
+}
+.col h3 {
+font-size: 14px;
+}
 }

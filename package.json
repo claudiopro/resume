@@ -1,0 +1,28 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Claudio's resume",
+  "main": "resume.html",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudiopro/resume.git"
+  },
+  "keywords": [
+    "resume",
+    "claudio",
+    "procida"
+  ],
+  "author": "Claudio Procida",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/claudiopro/resume/issues"
+  },
+  "homepage": "https://github.com/claudiopro/resume#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4"
+  }
+}
