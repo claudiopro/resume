@@ -164,7 +164,7 @@ content: "(Sourceforge)";
 }
 ul.projects li a.github:before {
 background: url("github.png") transparent no-repeat 90% center;
-content: "(Github\A0\A0\A0\A0)";
+content: "(Github\A0\A0\A0)";
 }
 ul.projects li.last {
 clear: both;
