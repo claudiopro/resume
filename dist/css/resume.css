@@ -65,10 +65,8 @@ a:hover, a:active {
   color: maroon;
   font-size: 14px;
   font-weight: bold; }
-
-.company a:link, .company a:visited,
-.college a:link, .college a:visited {
-  color: maroon; }
+  .company a:link, .company a:visited, .college a:link, .college a:visited {
+    color: maroon; }
 
 .job {
   padding: 6px;
@@ -108,16 +106,13 @@ dl.langs dd {
 
 dl.langs dd {
   color: #999; }
-
-dl.langs dd:before {
-  padding-left: 2px;
-  content: " ("; }
-
-dl.langs dd:after {
-  content: "), "; }
-
-dl.langs dd.last:after {
-  content: ")"; }
+  dl.langs dd:before {
+    padding-left: 2px;
+    content: " ("; }
+  dl.langs dd:after {
+    content: "), "; }
+  dl.langs dd.last:after {
+    content: ")"; }
 
 ul.projects li,
 ul.skills li,
@@ -132,26 +127,20 @@ ul.interests li {
 
 ul.projects {
   /*position: relative;*/ }
-
-ul.projects li {
-  /*float: left;*/ }
-
-ul.projects li a {
-  /*display: block;*/ }
-
-ul.projects li a.repo:before {
-  color: #999;
-  padding-left: 2px; }
-
-ul.projects li a.sfnet:before {
-  content: "(Sourceforge)"; }
-
-ul.projects li a.github:before {
-  background: url("../../github.png") transparent no-repeat 90% center;
-  content: "(Github\A0\A0\A0)"; }
-
-ul.projects li.last {
-  clear: both; }
+  ul.projects li {
+    /*float: left;*/ }
+    ul.projects li.last {
+      clear: both; }
+    ul.projects li a {
+      /*display: block;*/ }
+      ul.projects li a.repo:before {
+        color: #999;
+        padding-left: 2px; }
+      ul.projects li a.sfnet:before {
+        content: "(Sourceforge)"; }
+      ul.projects li a.github:before {
+        background: url("../../github.png") transparent no-repeat 90% center;
+        content: "(Github\A0\A0\A0)"; }
 
 ul.skills li:nth-child(even),
 ul.projects li:nth-child(even)
