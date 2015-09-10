@@ -173,45 +173,51 @@ ul.interests li:nth-child(even) {
 background-color: #eee;
 }
 ul.social li {
-font-size: 14px;
-margin: 0;
-display: block;
-padding: 12px 6px 12px 64px;
-border-bottom: 1px solid #ccc;
-color: #444;
-background: none #eee no-repeat 6px 50%;
-}
-ul.social li.last {
-border-bottom: none;
-}
+	font-size: 14px;
+	margin: 0;
+	display: block;
+	padding: 12px 6px 12px 64px;
+	border-bottom: 1px solid #ccc;
+	color: #444;
+	background: none #eee no-repeat 6px 50%;
+	
+	&.last {
+		border-bottom: none;
+	}
 
-ul.social li.twitter {
-background-image: url("../../twitter.png");
-}
-ul.social li.email {
-background-image: url("../../email.png");
-}
-ul.social li.linkedin {
-background-image: url("../../linkedin.png");
-}
+	&.twitter {
+		background-image: url("../../twitter.png");
+		
+		&:before {
+			content: "twitter\A"; /* Adds a newline after the pseudo element's content */
+		}
+	}
+	&.email {
+		background-image: url("../../email.png");
+		
+		&:before {
+			content: "email\A"; /* Adds a newline after the pseudo element's content */
+		}
+	}
+	&.linkedin {
+		background-image: url("../../linkedin.png");
 
-ul.social li:before {
-font-size: 16px;
-font-weight: bold;
-text-transform: uppercase;
-white-space: pre; /* Causes the newline after the pseudo element's content to actually work */
-}
-ul.social li.twitter:before {
-content: "twitter\A"; /* Adds a newline after the pseudo element's content */
-}
-ul.social li.email:before {
-content: "email\A"; /* Adds a newline after the pseudo element's content */
-}
-ul.social li.linkedin:before {
-content: "LinkedIn\A"; /* Adds a newline after the pseudo element's content */
-}
-ul.social li.mobile:before {
-content: "mobile\A"; /* Adds a newline after the pseudo element's content */
+		&:before {
+			content: "LinkedIn\A"; /* Adds a newline after the pseudo element's content */
+		}
+	}
+	&.mobile {
+		&:before {
+			content: "mobile\A"; /* Adds a newline after the pseudo element's content */
+		}
+	}
+
+	&:before {
+		font-size: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+		white-space: pre; /* Causes the newline after the pseudo element's content to actually work */
+	}
 }
 
 div.pic {
@@ -234,26 +240,31 @@ div.pic {
 }
 
 @media print {
-html, body {
-background-color: #fff;
-padding: 1px 0 0 0;
-}
-.col {
-padding: 0 15px;
-}
-button {
-display: none;
-}
-div.pic {
-margin: 0;
-}
-div.pic img.bio {
-}
-.col h2 {
-margin: 7px 0;
-}
-.col h3 {
-font-size: 14px;
-}
+	html, body {
+		background-color: #fff;
+		padding: 1px 0 0 0;
+	}
 
+	.col {
+		padding: 0 15px;
+
+		h2 {
+			margin: 7px 0;
+		}
+		h3 {
+			font-size: 14px;
+		}
+	}
+
+	button {
+		display: none;
+	}
+
+	div.pic {
+		margin: 0;
+	
+		img.bio {
+			/* */
+		}
+	}
 }
