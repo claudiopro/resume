@@ -69,30 +69,33 @@ background-color: #fff;
 }
  
 .clear {
-clear: both;
+	clear: both;
 }
 
 .company, .college {
-color: maroon;
-font-size: 14px;
-font-weight: bold;
+	color: maroon;
+	font-size: 14px;
+	font-weight: bold;
+	
+	a:link, a:visited {
+		color: maroon;
+	}
+	
 }
-.company a:link, .company a:visited,
-.college a:link, .college a:visited {
-color: maroon;
-}
+
 .job {
-padding: 6px;
-background-color: #eee;
-border-bottom: 1px solid #ccc;
+	padding: 6px;
+	background-color: #eee;
+	border-bottom: 1px solid #ccc;
 }
+
 .edu, .geo {
-font-size: 12px;
-background: none #ddd no-repeat 6px 50%;
-text-transform: uppercase;
-padding: 6px 6px 6px 32px;
-border-top: 1px solid #ccc;
-margin-bottom: 20px;
+	font-size: 12px;
+	background: none #ddd no-repeat 6px 50%;
+	text-transform: uppercase;
+	padding: 6px 6px 6px 32px;
+	border-top: 1px solid #ccc;
+	margin-bottom: 20px;
 }
 .geo {
 background-image: url("../../geo.png");
@@ -119,18 +122,20 @@ line-height: 1.5;
 color: #444;
 margin: 2px 0;
 }
+
 dl.langs dd {
-color: #999;
-}
-dl.langs dd:before {
-padding-left: 2px;
-content: " (";
-}
-dl.langs dd:after {
-content: "), ";
-}
-dl.langs dd.last:after {
-content: ")";
+	color: #999;
+	
+	&:before {
+		padding-left: 2px;
+		content: " (";
+	}
+	&:after {
+		content: "), ";
+	}
+	&.last:after {
+		content: ")";
+	}
 }
 	
 ul.projects li,
@@ -145,28 +150,32 @@ background-color: #ddd;
 margin: 2px 0;
 }
 ul.projects {
-/*position: relative;*/
+	/*position: relative;*/
+
+	li {
+		/*float: left;*/
+		
+		&.last {
+			clear: both;
+		}
+		
+		a {
+			/*display: block;*/
+			&.repo:before {
+				color: #999;
+				padding-left: 2px;
+			}
+			&.sfnet:before {
+				content: "(Sourceforge)";
+			}
+			&.github:before {
+				background: url("../../github.png") transparent no-repeat 90% center;
+				content: "(Github\A0\A0\A0)";
+			}
+		}
+	}
 }
-ul.projects li {
-/*float: left;*/
-}
-ul.projects li a {
-/*display: block;*/
-}
-ul.projects li a.repo:before {
-color: #999;
-padding-left: 2px;
-}
-ul.projects li a.sfnet:before {
-content: "(Sourceforge)";
-}
-ul.projects li a.github:before {
-background: url("../../github.png") transparent no-repeat 90% center;
-content: "(Github\A0\A0\A0)";
-}
-ul.projects li.last {
-clear: both;
-}
+
 ul.skills li:nth-child(even),
 ul.projects li:nth-child(even)
 ul.interests li:nth-child(even) {
