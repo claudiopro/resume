@@ -1,6 +1,6 @@
 # Claudio's Resume
 
-This is a resume, generated to some extent via Gulp and SASS. You can see it live (with some redactions) [here](http://claudiopro.github.io/resume/).
+This is a resume, generated to some extent via Gulp and SASS. You can see it live (with some redactions) [here](https://claudiopro.github.io/resume/).
 
 # License
 
