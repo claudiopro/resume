@@ -26,6 +26,7 @@ background-color: #fff;
 }
 
 @mixin cursive {
+	font-style: italic;
 	font-family: Georgia, serif;
 }
 
@@ -74,12 +75,24 @@ background-color: #fff;
 		color: #666;
 
 		&.tech {
-			font-style: italic;
 			color: $dark-gray;
 			@include cursive;
 
 			&:before {
 				content: "Tech: ";
+			}
+		}
+
+		.links {
+			a {
+				color: maroon;
+			}
+
+			&:before {
+				content: " (";
+			}
+			&:after {
+				content: ")";
 			}
 		}
 	}
