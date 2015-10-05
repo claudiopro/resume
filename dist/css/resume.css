@@ -4,8 +4,14 @@
  * or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View,
  * California, 94041, USA.
  */
+/**
+ * This work is licensed under the Creative Commons Attribution 3.0 Unported License.
+ * To view a copy of this license, visit http://creativecommons.org/licenses/by/3.0/
+ * or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View,
+ * California, 94041, USA.
+ */
 html, body {
-  font-family: "Geneva", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #eee;
   padding: 20px 10px; }
 
@@ -57,6 +63,10 @@ a:hover, a:active {
     margin: 0;
     font-size: 12px;
     color: #666; }
+    .col .section p.tech {
+      font-style: italic;
+      color: #999;
+      font-family: Georgia, serif; }
 
 .clear {
   clear: both; }
