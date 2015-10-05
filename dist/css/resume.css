@@ -67,6 +67,8 @@ a:hover, a:active {
       font-style: italic;
       color: #999;
       font-family: Georgia, serif; }
+      .col .section p.tech:before {
+        content: "Tech: "; }
 
 .clear {
   clear: both; }
