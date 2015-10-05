@@ -77,6 +77,10 @@ background-color: #fff;
 			font-style: italic;
 			color: $dark-gray;
 			@include cursive;
+
+			&:before {
+				content: "Tech: ";
+			}
 		}
 	}
 }
