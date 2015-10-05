@@ -64,11 +64,17 @@ a:hover, a:active {
     font-size: 12px;
     color: #666; }
     .col .section p.tech {
-      font-style: italic;
       color: #999;
+      font-style: italic;
       font-family: Georgia, serif; }
       .col .section p.tech:before {
         content: "Tech: "; }
+    .col .section p .links a {
+      color: maroon; }
+    .col .section p .links:before {
+      content: " ("; }
+    .col .section p .links:after {
+      content: ")"; }
 
 .clear {
   clear: both; }
