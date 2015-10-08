@@ -187,8 +187,8 @@ ul.projects {
       ul.projects li a.sfnet:before {
         content: "(Sourceforge)"; }
       ul.projects li a.github:before {
-        background: url("../../github.png") transparent no-repeat 90% center;
-        content: "(Github\A0\A0\A0)"; }
+        background: url("../../github-small.png") transparent no-repeat 90% center;
+        content: "(GitHub\A0\A0\A0)"; }
 
 ul.skills li:nth-child(even),
 ul.projects li:nth-child(even)
@@ -215,10 +215,20 @@ ul.social li {
     ul.social li.email:before {
       content: "email\A";
       /* Adds a newline after the pseudo element's content */ }
+  ul.social li.github {
+    background-image: url("../../github.png"); }
+    ul.social li.github:before {
+      content: "GitHub\A";
+      /* Adds a newline after the pseudo element's content */ }
   ul.social li.linkedin {
     background-image: url("../../linkedin.png"); }
     ul.social li.linkedin:before {
       content: "LinkedIn\A";
+      /* Adds a newline after the pseudo element's content */ }
+  ul.social li.skype {
+    background-image: url("../../skype.png"); }
+    ul.social li.skype:before {
+      content: "Skype\A";
       /* Adds a newline after the pseudo element's content */ }
   ul.social li.mobile:before {
     content: "mobile\A";
