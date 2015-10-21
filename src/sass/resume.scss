@@ -38,6 +38,13 @@ text-decoration: underline;
 .main {
 width: 1005px;
 background-color: #fff;
+display: flex;
+flex-direction: row;
+}
+
+@mixin cursive {
+	font-style: italic;
+	font-family: Georgia, serif;
 }
 
 @mixin cursive {
@@ -46,7 +53,7 @@ background-color: #fff;
 }
 
 .col {
-	float: left;
+	flex: 1;
 	width: 303px;
 	min-height: 1024px;
 	border-right: 2px solid #ccc;
