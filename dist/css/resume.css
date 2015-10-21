@@ -55,10 +55,18 @@ a:hover, a:active {
 
 .main {
   width: 1005px;
-  background-color: #fff; }
+  background-color: #fff;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row; }
 
 .col {
-  float: left;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   width: 303px;
   min-height: 1024px;
   border-right: 2px solid #ccc;
