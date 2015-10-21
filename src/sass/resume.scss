@@ -47,11 +47,6 @@ flex-direction: row;
 	font-family: Georgia, serif;
 }
 
-@mixin cursive {
-	font-style: italic;
-	font-family: Georgia, serif;
-}
-
 .col {
 	flex: 1;
 	width: 303px;
