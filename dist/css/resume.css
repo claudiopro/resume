@@ -55,6 +55,7 @@ a:hover, a:active {
 
 .main {
   width: 1005px;
+  margin: auto;
   background-color: #fff;
   display: -webkit-flex;
   display: -ms-flexbox;
