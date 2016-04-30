@@ -40,16 +40,19 @@
  *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  *  THE SOFTWARE.
  */
-html, body {
+html,
+body {
   font-family: Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #eee;
   padding: 20px 10px; }
 
-a:link, a:visited {
+a:link,
+a:visited {
   color: #444;
   text-decoration: none; }
 
-a:hover, a:active {
+a:hover,
+a:active {
   color: maroon;
   text-decoration: underline; }
 
@@ -71,14 +74,16 @@ a:hover, a:active {
   width: 303px;
   min-height: 1024px;
   border-right: 2px solid #ccc;
-  padding: 20px 15px;
+  padding: 20px 12px;
   /*
-	h2:before {
-		content: "*";
-		font-size: 18px;
-		padding-right: 6px;
-	}
-	*/ }
+  h2:before {
+    content: "*";
+    font-size: 18px;
+    padding-right: 6px;
+  }
+  */ }
+  .col.first {
+    max-width: 295px; }
   .col.last {
     border-right: none; }
   .col h1 {
@@ -91,9 +96,10 @@ a:hover, a:active {
     padding: 2px 10px;
     font-size: 14px;
     color: #fff;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: 10px 0 8px 0; }
   .col h3 {
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     margin: 0; }
   .col .section p {
@@ -102,6 +108,8 @@ a:hover, a:active {
     margin: 0;
     font-size: 12px;
     color: #666; }
+    .col .section p + p {
+      padding-top: 2px; }
     .col .section p.tech {
       color: #999;
       font-style: italic;
@@ -110,6 +118,10 @@ a:hover, a:active {
         content: "Tech: "; }
     .col .section p .links a {
       color: maroon; }
+      .col .section p .links a:after {
+        content: ", "; }
+      .col .section p .links a:last-child:after {
+        content: none; }
     .col .section p .links:before {
       content: " ("; }
     .col .section p .links:after {
@@ -118,25 +130,29 @@ a:hover, a:active {
 .clear {
   clear: both; }
 
-.company, .college {
+.company,
+.college {
   color: maroon;
   font-size: 14px;
   font-weight: bold; }
-  .company a:link, .company a:visited, .college a:link, .college a:visited {
+  .company a:link, .company a:visited,
+  .college a:link,
+  .college a:visited {
     color: maroon; }
 
-.job {
+.description {
   padding: 6px;
   background-color: #eee;
   border-bottom: 1px solid #ccc; }
 
-.edu, .geo {
-  font-size: 12px;
+.edu,
+.geo {
+  font-size: 10px;
   background: none #ddd no-repeat 6px 50%;
   text-transform: uppercase;
-  padding: 6px 6px 6px 32px;
+  padding: 6px 6px 6px 28px;
   border-top: 1px solid #ccc;
-  margin-bottom: 20px; }
+  margin-bottom: 6px; }
 
 .geo {
   background-image: url("../../geo.png"); }
@@ -148,39 +164,52 @@ a:hover, a:active {
   float: right;
   white-space: nowrap; }
 
-dl.langs, ul.social, ul.projects, ul.interests, ul.skills {
+dl.langs,
+ul.social,
+ul.projects,
+ul.interests,
+ul.skills {
   margin: 0;
   padding: 0;
   position: relative; }
 
 dl.langs dt,
-dl.langs dd {
-  font-size: 16px;
-  display: inline-block;
-  line-height: 1.5;
-  color: #444;
-  margin: 2px 0; }
-
-dl.langs dd {
-  color: #999; }
-  dl.langs dd:before {
-    padding-left: 2px;
-    content: " ("; }
-  dl.langs dd:after {
-    content: "), "; }
-  dl.langs dd.last:after {
-    content: ")"; }
-
+dl.langs dd,
 ul.projects li,
 ul.skills li,
 ul.interests li {
   border-radius: 4px;
   font-size: 12px;
   display: inline-block;
-  padding: 6px;
+  padding: 4px;
   color: #444;
-  background-color: #ddd;
+  background-color: #eee;
+  border: 1px solid #ddd;
   margin: 2px 0; }
+
+dl.langs dt {
+  padding-right: 2px;
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -webkit-column-break-after: avoid;
+  page-break-after: avoid;
+  break-after: avoid; }
+
+dl.langs dd {
+  padding-left: 2px;
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -webkit-column-break-before: avoid;
+  page-break-before: avoid;
+  break-before: avoid;
+  color: #999; }
+  dl.langs dd:before {
+    padding-left: 2px;
+    content: "("; }
+  dl.langs dd:after {
+    content: ")"; }
 
 ul.projects {
   /*position: relative;*/ }
@@ -196,13 +225,9 @@ ul.projects {
       ul.projects li a.sfnet:before {
         content: "(Sourceforge)"; }
       ul.projects li a.github:before {
+        font-size: 11px;
         background: url("../../github-small.png") transparent no-repeat 90% center;
         content: "(GitHub\A0\A0\A0)"; }
-
-ul.skills li:nth-child(even),
-ul.projects li:nth-child(even)
-ul.interests li:nth-child(even) {
-  background-color: #eee; }
 
 ul.social li {
   font-size: 14px;
@@ -252,8 +277,8 @@ ul.social li {
 div.pic {
   border: 2px solid #eee;
   display: inline-block;
-  padding: 20px;
-  margin: 10px 0;
+  padding: 10px;
+  margin: 10px 12px;
   position: relative; }
   div.pic button {
     position: absolute;
@@ -268,11 +293,11 @@ div.pic {
     background-color: #fff;
     padding: 1px 0 0 0; }
   .col {
-    padding: 0 15px; }
+    padding: 0 10px; }
     .col h2 {
       margin: 7px 0; }
     .col h3 {
-      font-size: 14px; }
+      font-size: 13px; }
   button {
     display: none; }
   div.pic {
