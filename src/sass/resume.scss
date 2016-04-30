@@ -58,6 +58,10 @@ a:active {
   border-right: 2px solid $mid-gray;
   padding: 20px 12px;
 
+  &.first {
+    max-width: 295px;
+  }
+
   &.last {
     border-right: none;
   }
@@ -81,10 +85,11 @@ a:active {
     font-size: 14px;
     color: $white;
     text-transform: uppercase;
-    margin: 10px 0;
+    margin: 10px 0 8px 0;
   }
+
   h3 {
-    font-size: 15px;
+    font-size: 14px;
     text-transform: uppercase;
     margin: 0;
   }
@@ -95,6 +100,10 @@ a:active {
     margin: 0;
     font-size: 12px;
     color: $dark-dark-gray;
+
+    &+p {
+      padding-top: 2px;
+    }
 
     &.tech {
       color: $dark-gray;
@@ -164,7 +173,7 @@ a:active {
   text-transform: uppercase;
   padding: 6px 6px 6px 32px;
   border-top: 1px solid $mid-gray;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .geo {
@@ -191,39 +200,44 @@ ul.skills {
 }
 
 dl.langs dt,
-dl.langs dd {
-  font-size: 16px;
-  display: inline-block;
-  line-height: 1.5;
-  color: $darkest-gray;
-  margin: 2px 0;
-}
-
-dl.langs dd {
-  color: #999;
-
-  &:before {
-    padding-left: 2px;
-    content: " (";
-  }
-  &:after {
-    content: "), ";
-  }
-  &.last:after {
-    content: ")";
-  }
-}
-
+dl.langs dd,
 ul.projects li,
 ul.skills li,
 ul.interests li {
   border-radius: 4px;
   font-size: 12px;
   display: inline-block;
-  padding: 6px;
+  padding: 4px;
   color: $darkest-gray;
-  background-color: #ddd;
+  background-color: $light-gray;
+  border: 1px solid $mid-light-gray;
   margin: 2px 0;
+}
+
+dl.langs dt {
+  padding-right: 2px;
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  break-after: avoid;
+}
+
+dl.langs dd {
+  padding-left: 2px;
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  break-before: avoid;
+
+  color: $dark-gray;
+
+  &:before {
+    padding-left: 2px;
+    content: "(";
+  }
+  &:after {
+    content: ")";
+  }
 }
 
 ul.projects {
@@ -246,17 +260,12 @@ ul.projects {
         content: "(Sourceforge)";
       }
       &.github:before {
+        font-size: 11px;
         background: url("../../github-small.png") transparent no-repeat 90% center;
         content: "(GitHub\A0\A0\A0)";
       }
     }
   }
-}
-
-ul.skills li:nth-child(even),
-ul.projects li:nth-child(even)
-ul.interests li:nth-child(even) {
-  background-color: $light-gray;
 }
 
 ul.social li {
@@ -324,8 +333,8 @@ ul.social li {
 div.pic {
   border: 2px solid $light-gray;
   display: inline-block;
-  padding: 20px;
-  margin: 10px 0;
+  padding: 10px;
+  margin: 10px 12px;
   position: relative;
 
   button {
@@ -347,13 +356,14 @@ div.pic {
   }
 
   .col {
-    padding: 0 15px;
+    padding: 0 10px;
 
     h2 {
       margin: 7px 0;
     }
+
     h3 {
-      font-size: 14px;
+      font-size: 13px;
     }
   }
 
