@@ -51,6 +51,10 @@ a:active {
   font-family: Georgia, serif;
 }
 
+.blurb {
+  @include cursive;
+}
+
 .col {
   flex: 1;
   width: 303px;
@@ -69,6 +73,7 @@ a:active {
   h1 {
     color: $dark-orange;
     font-size: 26px;
+    margin: 10px 0;
     text-transform: capitalize;
   }
   /*
