@@ -349,13 +349,23 @@ div.pic {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
   body,
   html {
     margin: 0;
     padding: 0;
   }
 
+  .main {
+    width: auto;
+  }
+
+  .col.first {
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
   div.pic {
     display: block;
     margin: 0 auto;
@@ -364,15 +374,23 @@ div.pic {
     border: none;
 
     img {
-      border: 2px solid $light-gray;
-      padding: 10px;
+      padding: 10px 0;
     }
   }
 
+  .col {
+    border: none;
+  }
+
+  .col + .col {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 568px) {
   .main {
-    width: auto;
-    display: block;
     padding: 20px 0;
+    display: block;
   }
 
   .col {
@@ -381,8 +399,8 @@ div.pic {
     border: none;
   }
 
-  .col.first {
-    max-width: none;
+  .col + .col {
+    padding-left: 12px;
   }
 }
 
