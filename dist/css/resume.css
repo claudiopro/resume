@@ -288,11 +288,17 @@ div.pic {
   div.pic img {
     width: 250px; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
   body,
   html {
     margin: 0;
     padding: 0; }
+  .main {
+    width: auto; }
+  .col.first {
+    max-width: none; } }
+
+@media screen and (max-width: 768px) {
   div.pic {
     display: block;
     margin: 0 auto;
@@ -300,18 +306,22 @@ div.pic {
     text-align: center;
     border: none; }
     div.pic img {
-      border: 2px solid #eee;
-      padding: 10px; }
+      padding: 10px 0; }
+  .col {
+    border: none; }
+  .col + .col {
+    padding-left: 0; } }
+
+@media screen and (max-width: 568px) {
   .main {
-    width: auto;
-    display: block;
-    padding: 20px 0; }
+    padding: 20px 0;
+    display: block; }
   .col {
     padding: 0 12px;
     width: auto;
     border: none; }
-  .col.first {
-    max-width: none; } }
+  .col + .col {
+    padding-left: 12px; } }
 
 @media print {
   html, body {
