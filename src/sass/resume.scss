@@ -35,7 +35,7 @@ a:visited {
 }
 a:hover,
 a:active {
-  color: maroon;
+  color: $dark-orange;
   text-decoration: underline;
 }
 .main {
@@ -67,7 +67,7 @@ a:active {
   }
 
   h1 {
-    color: maroon;
+    color: $dark-orange;
     font-size: 26px;
     text-transform: capitalize;
   }
@@ -116,7 +116,7 @@ a:active {
 
     .links {
       a {
-        color: maroon;
+        color: $dark-orange;
 
         &:after {
           content: ", ";
@@ -144,12 +144,12 @@ a:active {
 
 .company,
 .college {
-  color: maroon;
+  color: $dark-orange;
   font-size: 14px;
   font-weight: bold;
 
   a:link, a:visited {
-    color: maroon;
+    color: $dark-orange;
   }
 
 }
