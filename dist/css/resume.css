@@ -288,6 +288,31 @@ div.pic {
   div.pic img {
     width: 250px; }
 
+@media screen and (max-width: 480px) {
+  body,
+  html {
+    margin: 0;
+    padding: 0; }
+  div.pic {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    border: none; }
+    div.pic img {
+      border: 2px solid #eee;
+      padding: 10px; }
+  .main {
+    width: auto;
+    display: block;
+    padding: 20px 0; }
+  .col {
+    padding: 0 12px;
+    width: auto;
+    border: none; }
+  .col.first {
+    max-width: none; } }
+
 @media print {
   html, body {
     background-color: #fff;
