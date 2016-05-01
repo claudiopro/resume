@@ -349,7 +349,7 @@ div.pic {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1062px) {
   body,
   html {
     margin: 0;
@@ -365,7 +365,7 @@ div.pic {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 876px) {
   div.pic {
     display: block;
     margin: 0 auto;
@@ -385,12 +385,38 @@ div.pic {
   .col + .col {
     padding-left: 0;
   }
+
+  .period {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 698px) {
+  div.pic {
+    // img {
+    //   width: 80%;
+    // }
+  }
+
+  .col {
+    flex: 2;
+  }
+
+  .col.first {
+    flex: 1;
+  }
 }
 
 @media screen and (max-width: 568px) {
   .main {
     padding: 20px 0;
     display: block;
+  }
+
+  div.pic {
+    // img {
+    //   width: auto;
+    // }
   }
 
   .col {
@@ -401,6 +427,10 @@ div.pic {
 
   .col + .col {
     padding-left: 12px;
+  }
+
+  .period {
+    float: right;
   }
 }
 
