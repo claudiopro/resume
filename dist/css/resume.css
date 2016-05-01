@@ -53,7 +53,7 @@ a:visited {
 
 a:hover,
 a:active {
-  color: maroon;
+  color: #bf2d00;
   text-decoration: underline; }
 
 .main {
@@ -87,7 +87,7 @@ a:active {
   .col.last {
     border-right: none; }
   .col h1 {
-    color: maroon;
+    color: #bf2d00;
     font-size: 26px;
     text-transform: capitalize; }
   .col h2 {
@@ -117,7 +117,7 @@ a:active {
       .col .section p.tech:before {
         content: "Tech: "; }
     .col .section p .links a {
-      color: maroon; }
+      color: #bf2d00; }
       .col .section p .links a:after {
         content: ", "; }
       .col .section p .links a:last-child:after {
@@ -132,13 +132,13 @@ a:active {
 
 .company,
 .college {
-  color: maroon;
+  color: #bf2d00;
   font-size: 14px;
   font-weight: bold; }
   .company a:link, .company a:visited,
   .college a:link,
   .college a:visited {
-    color: maroon; }
+    color: #bf2d00; }
 
 .description {
   padding: 6px;
