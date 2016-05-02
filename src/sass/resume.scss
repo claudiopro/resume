@@ -53,6 +53,8 @@ a:active {
 
 .blurb {
   @include cursive;
+  margin: 10px 0 20px 0;
+  padding: 0 10px;
 }
 
 .col {
@@ -74,6 +76,7 @@ a:active {
     color: $dark-orange;
     font-size: 26px;
     margin: 10px 0;
+    padding: 0 10px;
     text-transform: capitalize;
   }
   /*
@@ -338,8 +341,8 @@ ul.social li {
 div.pic {
   border: 2px solid $light-gray;
   display: inline-block;
-  padding: 10px;
   margin: 10px 12px;
+  padding: 10px;
   position: relative;
 
   button {
@@ -351,6 +354,7 @@ div.pic {
 
   img {
     width: 250px;
+    display: block;
   }
 }
 
@@ -380,6 +384,7 @@ div.pic {
 
     img {
       padding: 10px 0;
+      display: inline;
     }
   }
 
@@ -397,12 +402,6 @@ div.pic {
 }
 
 @media screen and (max-width: 698px) {
-  div.pic {
-    // img {
-    //   width: 80%;
-    // }
-  }
-
   .col {
     flex: 2;
   }
@@ -416,12 +415,6 @@ div.pic {
   .main {
     padding: 20px 0;
     display: block;
-  }
-
-  div.pic {
-    // img {
-    //   width: auto;
-    // }
   }
 
   .col {
