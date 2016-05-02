@@ -69,7 +69,9 @@ a:active {
 
 .blurb {
   font-style: italic;
-  font-family: Georgia, serif; }
+  font-family: Georgia, serif;
+  margin: 10px 0 20px 0;
+  padding: 0 10px; }
 
 .col {
   -webkit-flex: 1;
@@ -94,6 +96,7 @@ a:active {
     color: #bf2d00;
     font-size: 26px;
     margin: 10px 0;
+    padding: 0 10px;
     text-transform: capitalize; }
   .col h2 {
     background-color: #444;
@@ -282,8 +285,8 @@ ul.social li {
 div.pic {
   border: 2px solid #eee;
   display: inline-block;
-  padding: 10px;
   margin: 10px 12px;
+  padding: 10px;
   position: relative; }
   div.pic button {
     display: none;
@@ -292,7 +295,8 @@ div.pic {
     right: 30px;
     z-index: 1; }
   div.pic img {
-    width: 250px; }
+    width: 250px;
+    display: block; }
 
 @media screen and (max-width: 1062px) {
   body,
@@ -312,7 +316,8 @@ div.pic {
     text-align: center;
     border: none; }
     div.pic img {
-      padding: 10px 0; }
+      padding: 10px 0;
+      display: inline; }
   .col {
     border: none; }
   .col + .col {
