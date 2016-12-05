@@ -1,5 +1,5 @@
 /**
- *  Copyright (c) 2013, 2015 Claudio Procida
+ *  Copyright (c) 2013, 2016 Claudio Procida
  *
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
  *  of this software and associated documentation files (the "Software"), to deal
@@ -20,7 +20,7 @@
  *  THE SOFTWARE.
  */
 /**
- *  Copyright (c) 2013, 2015 Claudio Procida
+ *  Copyright (c) 2013, 2016 Claudio Procida
  *
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
  *  of this software and associated documentation files (the "Software"), to deal
@@ -60,10 +60,8 @@ a:active {
   width: 1005px;
   margin: auto;
   background-color: #fff;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row; }
 
@@ -74,7 +72,6 @@ a:active {
   padding: 0 10px; }
 
 .col {
-  -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   width: 303px;
@@ -200,7 +197,6 @@ dl.langs dt {
   border-right: none;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  -webkit-column-break-after: avoid;
   page-break-after: avoid;
   break-after: avoid; }
 
@@ -209,7 +205,6 @@ dl.langs dd {
   border-left: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  -webkit-column-break-before: avoid;
   page-break-before: avoid;
   break-before: avoid;
   color: #999; }
@@ -327,11 +322,9 @@ div.pic {
 
 @media screen and (max-width: 698px) {
   .col {
-    -webkit-flex: 2;
     -ms-flex: 2;
     flex: 2; }
   .col.first {
-    -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1; } }
 
