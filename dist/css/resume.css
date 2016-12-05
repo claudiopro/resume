@@ -146,7 +146,7 @@ a:active {
     color: #bf2d00; }
 
 .description {
-  padding: 6px;
+  padding: 6px 6px 5px 6px;
   background-color: #eee;
   border-bottom: 1px solid #ccc; }
 
