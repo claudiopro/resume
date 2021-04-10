@@ -68,7 +68,7 @@ a:active {
 .blurb {
   font-style: italic;
   font-family: Georgia, serif;
-  margin: 10px 0 20px 0;
+  margin: 10px 0;
   padding: 0 10px; }
 
 .col {
@@ -150,6 +150,9 @@ a:active {
   background-color: #eee;
   border-bottom: 1px solid #ccc; }
 
+.current-job .job-description {
+  background-color: #fe0; }
+
 .edu,
 .geo {
   font-size: 10px;
@@ -178,6 +181,9 @@ ul.skills {
   padding: 0;
   position: relative; }
 
+ul.social {
+  margin-top: 20px; }
+
 dl.langs dt,
 dl.langs dd,
 ul.projects li,
@@ -197,7 +203,6 @@ dl.langs dt {
   border-right: none;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  page-break-after: avoid;
   break-after: avoid; }
 
 dl.langs dd {
@@ -205,7 +210,6 @@ dl.langs dd {
   border-left: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  page-break-before: avoid;
   break-before: avoid;
   color: #999; }
   dl.langs dd:before {
