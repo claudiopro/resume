@@ -1,5 +1,5 @@
 /**
- *  Copyright (c) 2013, 2016 Claudio Procida
+ *  Copyright (c) 2013, 2021 Claudio Procida
  *
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
  *  of this software and associated documentation files (the "Software"), to deal
@@ -465,5 +465,9 @@ div.pic {
     img.bio {
       /* */
     }
+  }
+
+  div.pronunciation {
+    display: none;
   }
 }
