@@ -1,5 +1,5 @@
 /**
- *  Copyright (c) 2013, 2016 Claudio Procida
+ *  Copyright (c) 2013, 2021 Claudio Procida
  *
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
  *  of this software and associated documentation files (the "Software"), to deal
@@ -22,11 +22,11 @@
 
 'use strict';
 
-var gulp = require('gulp')
-	, sass = require('gulp-sass')
-	, autoprefixer = require('gulp-autoprefixer')
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
 
-gulp.task('default', ['sass'])
+gulp.task('default', ['sass', 'media:copy']);
 
 gulp.task('sass', function () {
 	gulp.src('./src/sass/**/*.scss')
@@ -36,8 +36,13 @@ gulp.task('sass', function () {
 			, cascade: false
 		}))
 		.pipe(gulp.dest('./dist/css'))
-})
+});
 
 gulp.task('sass:watch', function () {
 	gulp.watch('./src/sass/**/*.scss', ['sass'])
+});
+
+gulp.task('media:copy', function () {
+	gulp.src('./media/*.mp3')
+    .pipe(gulp.dest('./dist/media'));
 })
