@@ -23,8 +23,9 @@
   },
   "homepage": "https://github.com/claudiopro/resume#readme",
   "devDependencies": {
-    "gulp": "^3.9.0",
+    "gulp": "^4.0.0",
     "gulp-autoprefixer": "^3.1.0",
-    "gulp-sass": "^2.0.4"
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.44.0"
   }
 }
